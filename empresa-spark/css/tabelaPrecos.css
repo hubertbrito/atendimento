@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color:  #8234E9;
+}
+
+.limitar-secao {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Topo da página */
+
+.container-topo {
+    width: 100%;
+    background-color:  #8234E9;
+    padding: 15px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    gap: 40px;
+    position: fixed;
+ }
+ 
+ .topo-logo {
+     width: 242px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ 
+ 
+ }
+ 
+ .topo-logo img {
+     width: 50px;
+     margin-top: 10px;
+ }
+ 
+ .topo-logo h1 {
+     font-size: 24px;
+ }
+ 
+ .topo-logo p {
+     margin-top: -5px;
+     font-size: 14px;
+     color: #ffffff;
+     font-weight: 600;
+ }
+ 
+ .topo-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 200px;
+ 
+ 
+ }
+ 
+ .topo-links a {
+     font-size: 14px;
+     padding: 5px 8px;
+     color: #ffffff;
+     text-decoration: none;
+     font-weight: 600;
+     flex-grow: 1;
+ }
+ .topo-links a:hover {
+     background-color: #3f0091;
+     padding: 5px 8px;
+     border-radius: 2px;
+ }
+
+/* Tabela de preços */
+
+main {
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+table {
+    width: 20%;
+    min-width: 275px;
+    margin: 0px auto;
+}
+
+.celula-escondida {
+    visibility: hidden;
+  }
+
+  .celula-cabeçalho {
+    text-align: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f1f3f7;
+    border-right: 1px solid #f1f3f7;
+    background-color: #f1f3f7;
+  }
+
+  .celula-cabeçalho p {
+    font-size: 10px;
+    font-weight: 500;
+    color: #a8a4a4;
+  }
+
+  .celula-cabeçalho h2 {
+    font-size: 18px;
+  }
+
+  table tbody td {
+    font-size: 10px;
+    text-align: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f1f3f7;
+    border-right: 1px solid #f1f3f7;
+  }
+  
+  .primeira-celula {
+    background-color: #f1f3f7;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .marcazul {
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    background-color: #8234E9;
+    border-radius: 100%;
+  }
+
+  #tabela-responsive {
+    height: 400px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  /* RODAPE */
+
+  footer {
+    background-color:  #8234E9;
+  }
+
+  footer p {
+    color: #fff;
+  }
+
+  .rodape-logo {
+    margin: 0px auto;
+    padding: 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rodape-logo img {
+    width: 60px;
+}
+
+.caixa-logo {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.texto-logo {
+    display: block;
+    padding: 4px;
+}
+
+.texto-logo p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: -4px;
+}
+
+.autor {
+    width: 100%;
+    margin: 49px auto 0;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.autor p {
+    color: black;
+    font-size: 10px;
+}
+
+.autor p span {
+    color:  #8234E9;
+    font-size: 10px;
+}

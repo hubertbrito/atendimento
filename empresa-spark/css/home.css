@@ -1,0 +1,345 @@
+/* Estilos globais*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.limitar-secao {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* Topo da página */
+
+.container-topo {
+    width: 100%;
+   background-color: #fff;
+   padding: 15px 50px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   box-sizing: border-box;
+   gap: 40px;
+   position: fixed;
+}
+
+.topo-logo {
+    width: 242px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.topo-logo img {
+    width: 50px;
+    margin-top: 10px;
+}
+
+.topo-logo h1 {
+    font-size: 24px;
+}
+
+.topo-logo p {
+    margin-top: -5px;
+    font-size: 14px;
+    color: #8234E9;
+    font-weight: 600;
+}
+
+.topo-links {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   min-width: 200px;
+
+
+}
+
+.topo-links a {
+    font-size: 14px;
+    padding: 0 8px;
+    color: #233032;
+    text-decoration: none;
+    font-weight: 600;
+    flex-grow: 1;
+}
+
+/* Banner da página */
+
+.secao-banner {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #8234E9;
+    padding: 100px 0px;
+ }
+ .container {
+    width: 100%;
+    max-width: 865px;
+    min-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .container-texto{
+    color: #fff;
+    padding: 10px 20px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+ }
+ .container-imagem {
+    flex: 1 1 468px;
+ }
+ .container-imagem img {
+    width: 100%;
+    height: 100%;
+ }
+/* Seção Primeiro Anúncio */
+
+.secao-primeiro-anuncio {
+    background-color: #23303e;
+    color: #fff;
+}
+
+.container-primeiro-anuncio {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 30px;
+   align-items: center;
+    padding: 20px 0;
+
+}
+
+.container-primeiro-anuncio a {
+    color: #fff;
+    background-color: #8234E9;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 2px;
+    font-size: 14px;
+
+}
+
+.container-primeiro-anuncio h2 {
+    font-size: 18px;
+}
+
+.container-primeiro-anuncio a span {
+    margin-left: 10px;
+}
+
+/* Seção de informações */
+
+.secao-informacoes {
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.secao-informacoes h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 369px;
+    max-width: 865px;
+    font-size: 32px;
+    margin: 0px auto 60px;
+}
+
+.secao-informacoes h2 span {
+    color: #8234E9;
+}
+
+.container-informacoes {
+    display: flex;
+    flex-wrap: wrap;
+    height: 240px;
+    max-width: 900px;   
+}
+
+.container-informacoes div {
+    width: 33%;
+}
+
+.container-informacoes div p {
+    padding: 10px;
+    font-size: 14px;
+
+}
+
+.container-informacoes div img {
+    width: 90px;
+}
+
+.container-informacoes div h3 {
+    margin: 10px;
+}
+
+/* Tabela de benefícios */
+
+.secao-planos {
+    padding: 100px 0;
+    background-color:  #f1f3f7;
+    text-align: center;
+}
+
+.secao-planos h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 369px;
+    max-width: 865px;
+    font-size: 32px;
+    margin: 0px auto 60px;
+   
+}
+
+.secao-planos h2 span {
+    color: #8234E9;
+}
+
+.img-tabela {
+    width: 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+table {
+    max-width: 865px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    box-shadow: 0px 2px 40px 10px #8234E9(47,134,214,1);
+}
+
+.th {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+table thead th h3 {
+    margin-bottom: 20px;
+}
+
+.th p {
+    max-width: 170px;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #a89f9f;
+}
+
+table tbody td {
+    width: 250px;
+    max-width: 890px;
+    text-align: center;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.linha-impar {
+    background-color: #f6f6f6;
+}
+
+.linha-par {
+    background-color: #fff;
+}
+
+/* Seção segundo Anúncio */
+
+.secao-segundo-anuncio {
+    background-color: #8234E9;
+    color: #fff;
+}
+
+.container-segundo-anuncio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container-segundo-anuncio a {
+
+    color: #fff;
+    background-color: #233032;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 2px;
+    font-size: 16px;
+
+}
+
+.container-segundo-anuncio h2 {
+    width: 480px;
+    font-size: 20px;
+
+}
+
+.container-segundo-anuncio a span {
+    margin-left: 10px;
+}
+
+
+/* Rodapé */
+
+.rodape-logo {
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rodape-logo img {
+    width: 60px;
+}
+
+.caixa-logo {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.texto-logo {
+    display: block;
+    padding: 4px;
+}
+
+.texto-logo p {
+    font-size: 14px;
+    color: #8234E9;
+    font-weight: 600;
+}
+.container-contatos {
+    width: 400px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f1f3f7;
+}
+
+footer span {
+    color: #8234E9;
+}
+
+

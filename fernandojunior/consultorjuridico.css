@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.topo {
+    border-bottom: 1px solid #d5d5d5;
+}
+.estilografia {
+    width: 60vw;
+    margin: 0 auto; 
+}
+.estilografia p{
+    padding: 12px 0;
+}
+
+.topo p {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.topo p ion-icon{
+    font-size: 34px;
+    padding: 2px 5px;
+    color: burlywood;
+}
+
+.banner-background {
+    background-image: url('img/capa.jpg');
+    background-size: cover;
+    height: 90vh;
+    padding: 20px 0;
+    text-align: right;
+}
+ 
+h1, h2, h3 {
+    margin: 0;
+    padding: 2px;
+}
+
+.conteudo-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-top: 30px;
+}
+.conteudo-banner h1, h2{
+    width: 100%;
+    background-color: rgba(255, 235, 205, 0.461);
+    max-width: 320px;
+    padding: 5px;
+}
+
+.left{
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    
+}
+
+.left {
+    background-color: #00000000; /* Fundo preto */
+    color: #ffffff; /* Letras brancas */
+    padding-bottom: 100px;
+}
+
+h4 {
+    font-size: 21px;
+    margin: 15px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+button {
+    background-color: rgb(232, 166, 0); /* Azul */
+    color: #ffffff; /* Letras brancas */
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+
+
+.secao-conteudo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.secao-conteudo h3 {
+    font-size: 20px;
+}
+
+img {
+    width: 251px;
+    height: 200px;
+    min-width: 100px;
+}
+
+.secao-background-divisao {
+    background-image: url('img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+span {
+    font-size: 20px;
+    padding-left: 10px;
+    border-left: 2px solid;
+}
+
+.secao-background-divisao h3 {
+    font-size: 2.4vw;
+}
+
+.divh3 {
+    background-color: #fff;
+    width: 14vw;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+    background-color: black;
+    color: #d5d5d5;
+    font-size: small;
+}
+footer a {
+    color: rgb(101, 155, 255);
+}
+
+
+@media (max-width: 780px) {
+    .banner-background{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+       
+    }
+    .topo p {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+    .topo p ion-icon{
+        font-size: 34px;
+        padding: 2px 5px;
+        color: burlywood;
+    }
+    .conteudo-banner{
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+    .conteudo-banner h1{
+      padding: 21px 21px 0px;
+      border-top: 2px solid  #fff;
+      border-left: 2px solid  #fff;
+      border-right: 2px solid  #fff;
+    }
+    .conteudo-banner h2{
+       padding: 0px 21px 21px;
+       border-bottom: 2px solid  #fff;
+       border-left: 2px solid  #fff;
+       border-right: 2px solid  #fff;
+    }
+    .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+    }
+    input, button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+        font-size: 16px;
+    }
+    .divh3 {
+        width: 27vw;
+        
+    }
+    .divh3 h3{
+        font-size: 16px;
+    }
+    
+    
+}

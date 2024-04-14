@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: deepskyblue;
+}
+header{
+    padding: 40px;
+}
+.secao-controle{
+    display: flex;
+}
+main{
+   display: flex;
+}
+.lista-fichas{
+    min-height: 90vh;
+    width: 75%;
+    padding: 20px;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.ficha-site{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px auto;
+    width: 80%;
+    height: auto;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    color: papayawhip;
+}
+.button-ficha{
+    color: black;
+    padding: 10px 15px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.link-button:hover{
+    cursor: pointer;
+
+}
+h1{
+    padding: 21px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+aside{
+    height: 90vh;
+    width: 25%;
+    padding: 15px;
+    background-color: rgb(32, 32, 42);
+}
+footer{
+    text-align: center;
+    padding: 14px 0;
+}
+
+
+@media screen and (max-width: 780px){
+    aside{
+        display: none;
+    }
+    .secao-principal{
+        width: 100%;
+    }
+    .lista-fichas{
+        width: 100%;
+    }
+    .ficha-site{
+        width: 100%;
+    }
+}

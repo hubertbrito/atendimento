@@ -3,15 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificação de Senha</title>
+    <title>Verificação de senha</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 <body>
-    <form id="meuFormulario">
-        <label for="senhaInput">Digite a senha:</label>
-        <input type="password" id="senhaInput" name="senhaInput">
-        <button type="button" onclick="verificarSenha()">Verificar</button>
-    </form>
+    <header>
+        <span>Portifólio GooWin</span>
+    </header>
+    <main>
+        <h2>Portal de mini sites da GooWin</h2>
 
+        <p>Bem-vindos ao portal aqui encontramos vários mini sites de portfólio que podem servir de exemplos para iciciar outros projetos de sites</p>
+
+        <form id="meuFormulario">
+
+            <fieldset>
+                <legend>Administrador</legend>
+
+                <label for="senhaInput">Senha:</label>
+                <input placeholder="Digite a senha" required type="password" id="senhaInput" name="senhaInput"/>
+            </fieldset>
+
+            
+            <button type="button" onclick="verificarSenha()">Verificar</button>
+
+        </form>
+    </main>
+    <footer>
+        Copyright 2024 - GooWin
+    </footer>
     <script>
         function verificarSenha() {
             const senhaInserida = document.getElementById("senhaInput").value;
@@ -27,3 +47,9 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+

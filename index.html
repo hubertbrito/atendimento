@@ -1,55 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificação de senha</title>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" href="portal.css">
+    <title>Site de Atendimento</title>
 </head>
 <body>
-    <header>
-        <span>Portifólio GooWin</span>
+    <header> 
+        Administração do Portal de Sites
     </header>
-    <main>
-        <h2>Portal de mini sites da GooWin</h2>
-
-        <p>Bem-vindos ao portal aqui encontramos vários mini sites de portfólio que podem servir de exemplos para iciciar outros projetos de sites</p>
-
-        <form id="meuFormulario">
-
-            <fieldset>
-                <legend>Administrador</legend>
-
-                <label for="senhaInput">Senha:</label>
-                <input placeholder="Digite a senha" required type="password" id="senhaInput" name="senhaInput"/>
-            </fieldset>
-
+    <main class="secao-principal">
+        <section class="lista-fichas">
+                <h1>Fichas de Sites</h1>
+                <div class="ficha-site">
+                    <div>
+                        <h3>Empresa Spark</h3>
+                        <p>Categoria: Hospedagem de sites</p>
+                        <p>Data de criação: 10/02/2024</p>
+                    </div>
+                    <div>
+                    <a href="https://hubertbrito.github.io/atendimento/empresa-spark/home.html" target="_blank" class="link-button"><button class="button-ficha">Ver site</button></a>
+                    </div>
+                </div>
+                <div class="ficha-site">
+                    <div>
+                        <h3>Pousada Esteluna</h3>
+                        <p>Categoria: Hotelaria e Turismo</p>
+                        <p>Data de criação: 28/01/2024</p>
+                    </div>
+                    <div>
+                       <a href="https://hubertbrito.github.io/atendimento/pousada-esteluna/inicio.html" target="_blank" class="link-button"><button class="button-ficha">Ver site</button></a>
+                    </div>
+                </div>
+                <div class="ficha-site">
+                    <div>
+                        <h3>Fernando Junior</h3>
+                        <p>Categoria: Consultor jurídico</p>
+                        <p>Data de criação: 19/03/2024</p>
+                    </div>
+                    <div>
+                       <a href="https://hubertbrito.github.io/atendimento/fernandojunior/consultorjuridico.html" target="_blank" class="link-button"><button class="button-ficha">Ver site</button></a>
+                    </div>
+                </div>
+                <div class="ficha-site">
+                    <div>
+                        <h3>JS life</h3>
+                        <p>Categoria: Clínica odonto</p>
+                        <p>Data de criação: 14/03/2024</p>
+                    </div>
+                    <div>
+                       <a href="https://hubertbrito.github.io/atendimento/joyce/dentista.html" target="_blank" class="link-button"><button class="button-ficha">Ver site</button></a>
+                    </div>
+                </div>
             
-            <button type="button" onclick="verificarSenha()">Verificar</button>
-
-        </form>
+        </section>
+        <aside>Lista de Mini Sites</aside>
     </main>
-    <footer>
-        Copyright 2024 - GooWin
-    </footer>
-    <script>
-        function verificarSenha() {
-            const senhaInserida = document.getElementById("senhaInput").value;
-            const senhaSecreta = "senhasecreta234";
-
-            if (senhaInserida === senhaSecreta) {
-                // Redirecionar para a página do próprio site (substitua a URL abaixo pela página desejada)
-                window.location.href = "https://hubertbrito.github.io/atendimento/portal.html";
-            } else {
-                alert("Senha incorreta. Tente novamente.");
-            }
-        }
-    </script>
+    <footer>GooWin 2024</footer>
 </body>
 </html>
-
-
-
-
-
-

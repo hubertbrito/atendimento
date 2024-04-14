@@ -59,6 +59,9 @@ h6{
     font-weight: 600;
     font-style: italic;
 }
+.link-logotipo .nome-logo h6 {
+  color: steelblue;
+}
 
 .menu-principal {
     padding: 5px;
@@ -138,10 +141,20 @@ img {
     font-weight: 600;
 }
 
-.div-quarto a {
-    text-decoration: none;
+.div-quarto p {
+    
     text-transform: uppercase;
     color: #3d3d3d;
+}
+.div-quarto a{
+  text-decoration: none;
+  color: #2b7f62;
+}
+.quartos-detalhes{
+  background-color: aquamarine;
+  margin: 12px 0;
+  padding: 8px 12px;
+  border-radius: 18px;
 }
 
 p {
@@ -292,6 +305,17 @@ p {
 }
 
 /* descrião responsivo */
+.secao-quartos {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column;
+}
+.quartos-detalhes{
+  background-color: aquamarine;
+  margin: 12px 0;
+  padding: 8px 12px;
+  border-radius: 18px;
+}
 .descricao{
     flex-direction: column;
     width: 100%;

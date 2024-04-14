@@ -10,7 +10,6 @@ body {
     background-color: white;
 }
 
-
 .titulo-galeria {
     background-image: url("../assets/img-fundo.jpg");
     background-repeat: no-repeat;
@@ -55,6 +54,7 @@ body {
 
 
 
+
   @media screen and (max-width: 600px) {
     .quarto-informacoes li {
       width: 50%;
@@ -73,6 +73,17 @@ body {
       border: 1px solid;
       padding: 0 25px;
     }
+    .quartos-img{
+      margin: 0 auto;
+      width: 80%;
+      padding-bottom: 20px;
+    }
+    .secao-quartos{
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+ 
   
   }
 

@@ -1,0 +1,307 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #203421;
+    font-family: 'Merrriweather';
+    overflow-x: hidden;
+}
+
+.navbar{
+    color: #FFF7E6;
+    background-color: #FFF7E6;
+}
+
+.nome-foto{
+    color: #203421;
+    font-weight: 400;
+}
+.hero-section{
+    height: 80vh;
+    background-color: #FFF7E6;
+    color: #203421;
+
+}
+h1{
+    font-size: 58px;
+    line-height: 3rem;
+    letter-spacing: -1px;
+}
+
+.container-banner{
+    margin: 0 auto;
+    max-width: 1420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+}
+.texto-banner{
+    display: flex;
+    align-items: center;
+}
+
+.icones-in-mobile{
+    visibility: hidden;
+}
+.img-hero{
+    border-radius: 30px;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #203421;
+    font-weight: 600;
+    position: relative;
+    margin: 0 0.3rem;
+}
+.nav-link:hover, .nav-link.active{
+    color: #203421;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #203421;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+} 
+
+.insta-icon{
+    margin-left: 3rem;
+}
+.figure{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.insta-icon, .whats-icon, .chevron-banner{
+    color: #203421;
+}
+.container-icons-sociais{
+    visibility: hidden;
+}
+
+.button-reserva{
+    color: #fff;
+    background-color: #203421;
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button-direcoes{
+    color: #fff;
+    background-color: #203421;
+    padding: 8px 34px;
+    border-radius: 30px;
+    border: 1px solid #142015;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button-sobre{
+    color: #fff;
+    background-color: #203421;
+    padding: 8px 24px;
+    border-radius: 30px;
+    border: 1px solid #142015;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button-reserva:hover, .button-sobre:hover{
+    background-color: #2a582e;
+    color: #fff;
+}
+.secao-sobre{
+    background-color: #FFF7E6;
+}
+.conteudo-sobre{
+    margin: 0 auto;
+    max-width: 75%;
+    padding: 36px 18px;
+}
+.nome-sobre{
+    color: #203421;
+    font-size: 42px;
+}
+.card{
+    box-shadow: none;
+    border: none;
+    background-color: #FFF7E6;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 39.25%; 
+}
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 86%;
+}
+
+ .bg-marrom-claro {
+    background-color: #f5e6cc;
+} 
+form{
+    border-radius: 30px;
+}
+.div-form{
+    padding: 18px;
+}
+.button-enviar{
+    color: #203421;
+    background-color: #FFF7E6;
+    padding: 8px 33px;
+    border-radius: 30px;
+    border: 1px solid #142015;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button-enviar:hover{
+    color: #fff;
+    background-color: #203421;
+    padding: 8px 33px;
+    border-radius: 30px;
+    border: 1px solid #142015;
+    font-size: 16px;
+    font-weight: bold;
+}
+.rodape{
+    background-color: #FFF7E6;
+    margin: 60px 0 0 0;
+}
+
+@media (max-width: 991px){
+    
+    .insta-icon, .whats-icon{
+        visibility: hidden;
+    }      
+    .conteudo-sobre{
+        margin: 0;
+        max-width: 100%;
+    }
+    .container-banner{
+        display: flex;
+        align-items: center;
+        max-width: 100%;     
+        height: 63vh;
+        padding-top: 18px;
+    }
+    
+    .icones-in-mobile{
+        visibility: visible;
+    }
+    .map-container iframe {
+        height: 100%;
+    }
+}
+
+
+
+
+
+/* Estilos padrão para todos os dispositivos */
+.my-element {
+    /* Estilos básicos */
+    background-color: lightgray;
+    padding: 10px;
+  }
+  /* Dispositivos small e maiores (tablets, 576px e acima) */
+  @media (max-width: 576px) {
+    .my-element {
+      /* Estilos para dispositivos small e maiores */
+      background-color: blue;
+      padding: 20px;
+  }
+  h1{
+    font-size: 39px;
+  }
+  .container-banner{   
+    height: auto;
+    padding: 80px 0px;
+}
+.container-icons-sociais{
+    visibility: visible;
+}
+  .insta-icon-mobile, .whats-icon-mobile{
+    color: #203421;
+}
+ 
+}
+  
+  /* Dispositivos small e maiores (tablets, 576px e acima) */
+  @media (min-width: 576px) {
+    h1{
+        font-size: 48px;
+        padding: 0 18px;
+    }
+    .container-banner{   
+        height: auto;
+        padding: 100px 0px;
+    }
+  }
+  
+  /* Dispositivos medium e maiores (desktops, 768px e acima) */
+  @media (min-width: 768px) {
+    h1{
+        font-size: 54px;
+        padding: 0 18px;
+    }
+    .container-banner{   
+        height: auto;
+        padding: 100px 0px;
+    }
+    
+  }
+  
+  /* Dispositivos large e maiores (desktops grandes, 992px e acima) */
+  @media (min-width: 992px) {
+    .my-element {
+      /* Estilos para dispositivos large e maiores */
+      background-color: red;
+      padding: 40px;
+    }
+  }
+  @media (max-width: 992px) {
+    .container-icons-sociais{
+        visibility: visible;
+    }
+    .insta-icon-mobile, .whats-icon-mobile{
+        color: #203421;
+    }
+    
+  }
+  
+  /* Dispositivos extra large (desktops extra grandes, 1200px e acima) */
+  @media (min-width: 1200px) {
+    .my-element {
+      /* Estilos para dispositivos extra large */
+      background-color: purple;
+      padding: 50px;
+    }
+    h1{
+        font-size: 48px;
+    }
+  }
+ 

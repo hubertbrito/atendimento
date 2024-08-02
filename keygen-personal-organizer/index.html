@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associando o bootstrap 5 ao documento HTML</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="..\node_modules\bootstrap\dist\css\bootstrap.min.css">
+
+    <script src="..\node_modules\bootstrap\dist\js\bootstrap.bundle.min.js" defer></script> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top mx-auto">
+        <div class="container-fluid col px-lg-1 px-md-5 pt-lg-3 container-topo">
+            <figure class="figure ps-lg-5 m-0 pt-2 ps-sm-4">
+                <img src="foto-avatar.png" alt="" class="img-fluid" style="border-radius: 50%; width: 50px;">
+                <figcaption class="figcaption nome-foto">Personal Organizer</figcaption>
+            </figure>
+          <button class="navbar-toggler pe-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <figure class="figure p-1 m-0">
+                    <img src="foto-avatar.png" alt="" class="img-fluid" style="border-radius: 50%; width: 50px;">
+                    <figcaption class="figcaption nome-foto">Personal Organizer</figcaption>
+                </figure>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-4">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Entre em contato comigo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="insta-icon" href="#"><i class="bi bi-instagram fs-4 px-3"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="whats-icon" href="#"><i class="bi bi-whatsapp fs-4 px-3"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!--End navbar-->
+
+    <!--Hero section-->
+    <section class="hero-section">
+      <div class="container col container-banner mt-lg-5 pt-lg-5">
+        <div class="row flex flex-row px-lg-1 pt-lg-5  align-items-lg-center">
+         <div class="col-lg-6 flex-lg-column ps-lg-1 pe-lg-0 texto-banner">
+            <h1 class="fw-bold text-center text-lg-start mb-3 pt-5 pt-lg-0">Transformando o caos em harmonia para o seu 
+              espaço pessoal.</h1>      
+        </div>
+          <div class="col-12 col-sm-12 col-lg-6 ps-lg-5 pe-lg-0" >
+            <img src="closet.jpg" class="d-block img-fluid img-hero mx-auto" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <div class="container mt-4 container-icons-sociais">
+              <a class="insta-icon-mobile" href="#"><i class="bi bi-instagram fs-1 px-3"></i></a>
+              <a class="whats-icon-mobile" href="#"><i class="bi bi-whatsapp fs-1 px-3"></i></a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p class="col-1 mx-auto m-0 p-0"><a class="chevron-banner" href="#section-service"><i class="bi bi-chevron-compact-down ps-2 ps-lg-5 fs-1"></i></a></p>
+    <!--End hero section-->
+    <!--servicos section-->
+    <section class="servicos-section"  id="section-service">
+      <div class="container mx-auto col-xxl-12 px-lg-0 px-sm-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-between g-5 py-5">
+          <div class="col-lg-6 pe-lg-2 pe-lg-0 ps-lg-5 text-center text-lg-start">
+            <p>R$ 350,00
+              3 h</p>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Pós mudança.</h2>
+            <p class="lead">Depois de toda a agitação de uma mudança, deixa comigo a tarefa de organizar 
+              tudo no seu novo espaço. Vou transformar o caos em um lar aconchegante.</p>
+            <div class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start">
+              <button type="button" class=" btn-lg px-4 me-md-2 button-reserva">Reserve agora</button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-6 pe-lg-0 ps-lg-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="mudanca2.jpg" class="d-block w-100 img-hero" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="mudanca1.jpg" class="d-block w-100 img-hero" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto col-xxl-12 px-lg-0 px-sm-4 py-5">
+        <div class="row flex align-items-center justify-content-between g-5 py-5">
+          <div class="col-lg-6 pe-lg-2 pe-lg-0 ps-lg-5 text-center text-lg-start">
+            <p>R$ 250,00
+              3 h</p>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Organização de Closet.</h2>
+            <p class="lead">Posso transformar seu armário em um espaço funcional e elegante, tornando seu dia a dia mais prático.</p>
+            <div class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start">
+              <button type="button" class=" btn-lg px-4 me-md-2 button-reserva">Reserve agora</button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-6 pe-lg-0 ps-lg-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="closet2.jpg" class="d-block w-100 img-hero" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="closet1.jpg" class="d-block w-100 img-hero" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto col-xxl-12 px-lg-0 px-sm-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-between g-5 py-5">
+          <div class="col-lg-6 pe-lg-2 pe-lg-0 ps-lg-5 text-center text-lg-start">
+            <p>R$ 300,00
+              4 h</p>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Planejamento de Espaço Residencial.</h2>
+            <p class="lead">Deixe-me criar um layout residencial que maximiza seu espaço, 
+              tornando sua casa mais confortável e agradável.</p>
+            <div class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start">
+              <button type="button" class=" btn-lg px-4 me-md-2 button-reserva">Reserve agora</button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-6 pe-lg-0 ps-lg-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="brinquedos2.jpg" class="d-block w-100 img-hero" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="brinquedos.jpg" class="d-block w-100 img-hero" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto col-xxl-12 px-lg-0 px-sm-4 py-5">
+        <div class="row flex align-items-center justify-content-between g-5 py-5">
+          <div class="col-lg-6 pe-lg-2 pe-lg-0 ps-lg-5 text-center text-lg-start">
+            <p>R$ 150,00
+              2 h</p>
+            <h2 class="display-5 fw-bold lh-1 mb-3">Organização de Home office e espaço de trabalho</h2>
+            <p class="lead">Deixe a confusão de documentos e ferramentas para trás e permita-me organizar tudo, garantindo que nada seja perdido.</p>
+            <div class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start">
+              <button type="button" class=" btn-lg px-4 me-md-2 button-reserva">Reserve agora</button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-6 pe-lg-0 ps-lg-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="home-office2.jpg" class="d-block w-100 img-hero" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="home-office.jpg" class="d-block w-100 img-hero" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+     <hr>
+     <section class="secao-sobre">
+      <div class="container flex-column col-12">
+        <div class="conteudo-sobre">
+          <h4 class="mb-0"><em>Sobre</em></h4>
+          <h2 class="mt-0 nome-sobre" ><em>Lucia Keygen</em></h2>
+          <p>
+            Lúcia Keygen sempre teve um olhar atento para os detalhes. Cresceu em meio a tecidos, tintas e revistas de 
+            decoração, absorvendo inspiração de cada canto da casa. 
+            Com o tempo, Lúcia percebeu que sua paixão não estava apenas na estética, mas também na funcionalidade. 
+            Ela via a organização como uma arte, uma maneira de harmonizar espaços e facilitar a vida das pessoas. 
+            Sua trajetória profissional a levou por caminhos diversos: trabalhou em lojas de moda, atuou como 
+            consultora de estilo e até gerenciou uma pequena empresa de limpeza.</p>
+
+           <p> Foi quando Lúcia percebeu que todas essas experiências se conectavam. Afinal, o que é a organização 
+            senão a combinação perfeita entre beleza e praticidade? Ela decidiu mergulhar de cabeça nessa paixão 
+            e se tornar uma personal organizer. Hoje seu objetivo é claro: ajudar as pessoas a transformarem seus 
+            ambientes, trazendo mais conforto, eficiência e bem-estar.</p>
+        </div>
+        <div class="collapse conteudo-sobre" id="collapseExample">
+          <div class="card card-body border-opacity-100 p-0">
+            <p> Hoje, Lúcia coloca em prática todo o conhecimento acumulado ao longo dos anos. Ela não apenas dobra 
+              roupas e arruma prateleiras; ela escuta histórias, compreende necessidades e cria soluções personalizadas. 
+              Seu olhar treinado enxerga potencial em cada espaço, e sua empatia a 
+              conecta com as dores e desejos de seus clientes.</p>
+  
+              <p> Seja em um pequeno apartamento ou em uma casa espaçosa, Lúcia está lá, transformando caos em ordem. 
+              Ela sabe que a organização vai além do físico; é uma forma de autocuidado, de aliviar o 
+              peso do dia a dia. E, acima de tudo, é uma maneira de agregar valor à vida das pessoas.</p>
+  
+              <p>
+              Então, se você busca mais do que uma arrumação superficial, se deseja um ambiente que 
+              reflita quem você é e como você quer viver, Lúcia é a sua aliada. Ela não apenas organiza espaços; 
+              ela transforma vidas.
+            </p>          </div>
+        </div>
+        <div class="conteudo-sobre">
+          <p class="d-inline-flex gap-1">
+            <button id="meuBotao" onclick="TrocarTexto()" class="btn button-sobre justify-content-lg-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Mostrar texto
+            </button>
+          </p>
+        </div>
+       
+       
+      </div>
+     </section>
+
+     <section>
+      
+     </section>
+<!--End servicos section-->
+
+<div class="container">
+  <div class="row p-5 flex g-5">
+      <div class="col-md-3">
+          <img  src="roupas-dobradas.png" alt="Imagem 1" class="img-fluid img-hero">
+      </div>
+      <div class="col-md-3 img-hero">
+          <img  src="calçados-e-roupas.png" alt="Imagem 2" class="img-fluid img-hero">
+      </div>
+      <div class="col-md-3 img-hero">
+          <img  src="armario-pia.png" alt="Imagem 3" class="img-fluid img-hero">
+      </div>
+      <div class="col-md-3 img-hero">
+          <img src="geladeira-organizada.png" alt="Imagem 4" class="img-fluid img-hero">
+      </div>
+  </div>
+</div>
+<div class="containe">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.697403243292!2d-43.33719502468681!3d-22.99815217919085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda0f31f1c135%3A0x56092979ab8746ef!2sAv.%20das%20Am%C3%A9ricas%2C%202000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022640-101!5e0!3m2!1spt-BR!2sbr!4v1722549161840!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+    </div>
+  </div>
+ </div>
+
+
+
+ <div class="container mx-auto col-xxl-12 px-lg-0 px-sm-4 mb-5">
+        <div class="row flex pt-5 pe-lg-0 ">
+          <div class="col-lg-5 pe-lg-2 pe-lg-0 ps-lg-5 align-items-lg-center text-center text-lg-start">
+           <div class="column">
+            <h3 class="display-6 fw-bold mb-3 mx-auto">Informações de contato</h3>
+            <address class="">
+              <div>
+                 <p class="lead"><i class="bi bi-geo-alt"></i> R. Morgado, 3 - Vila Seabra, Belford Roxo - RJ, 26112-025, Brasil</p>
+              </div>
+            </address>
+            <div class="d-grid gap-2 d-flex justify-content-center justify-content-lg-start my-3">
+              <button type="button" class="btn-lg px-4 mb-3 me-md-2 button-direcoes">Direções</button>
+            </div>
+           </div>
+          </div>
+          <div class="col col-sm-12 col-lg-7 pe-lg-1 ps-lg-5">
+                  <!-- Div direita -->
+                      <form class="bg-marrom-claro p-lg-5 p-2 my-3 my-lg-0">
+                        <div class="div-form">
+                          <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" placeholder="Seu telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="button-enviar">Enviar</button>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <footer class="col text-center rodape">
+        <div class="container align-items-center mx-auto">
+          <hr>
+          <p>Site de portifólio desenvolvido pela Goowin.vercel.app</p>
+          <p class="m-0">Contato: @goowin.com.br</p>
+        </div>
+       
+      </footer>
+              
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -169,6 +169,9 @@ form{
 .div-form{
     padding: 18px;
 }
+.form-control{
+    border: 1px solid #142015;
+}
 .button-enviar{
     color: #203421;
     background-color: #FFF7E6;

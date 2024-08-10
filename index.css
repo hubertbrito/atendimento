@@ -8,22 +8,24 @@ header{
     background-color: aliceblue;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    padding: 21px;
+    padding: 12px;
     border-bottom: 1px solid rgb(62, 122, 235);
     position: fixed;
     z-index: 10;
 }
 main{
+ 
     width: 100%;
     display: flex;
     flex-direction: row;
     
 }
 section{
-    padding: 100px 50px;
+    padding: 140px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +40,7 @@ section{
 aside{
     width: 9%;
     height: 100%;
-    padding: 6px;
+    padding: 27px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +151,7 @@ footer{
 
     }
     section{
-        padding: 100px 20px;
+        padding: 160px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -160,27 +162,41 @@ footer{
         text-align: center;
         border-left: 1px solid rgb(62, 122, 235);
     }
-    section h1{
-        margin: 24px;
+    .title{
+        color: aliceblue;
         padding: 18px 36px;
+        margin-bottom: 21px;
         background-color: cadetblue;
         border-radius: 8px;
+    }
+    .title p{
+        font-size: 18px;
+    }
+    .container-descricao h3{
+        font-size: 21px;
+    }
+    .container-descricao p{
+        font-size: 18px;
     }
     .container-botao{
         width: 100%;
         padding: 3px;
-        text-align: left;
+        text-align: center;
     }
     .button-ficha{
-        color: black;
-        padding: 9px 24px;
+        color: cadetblue;
+        padding: 12px 24px;
         background-color: aliceblue;
         cursor: pointer;
         border-radius: 8px;
+        border: 1px solid #adbce5;
         font-weight: bold;
+        font-size: 18px;
     }
     footer{
         display: block;
+        padding-bottom: 18px;
+      
     }
     .link-menu-lateral a{
         display: flex;
@@ -190,13 +206,13 @@ footer{
         font-size: 18px;
         text-decoration: none;
         text-align: center;
-        padding: 12px;
+        padding: 12px 12px 21px;
         border-radius: 12px;
         width: 100%;
         height: 80px;
     }
-    .ionicons{
+    .container-footer .link-menu-lateral .ionicons{
         padding: 6px;
-        font-size: 21px;
+        font-size: 36px;
     }
 }

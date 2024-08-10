@@ -1,0 +1,264 @@
+
+:root {
+    --cor-primaria:#000000;
+    --cor-secundaria:#f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-quaternaria: #2f4f4f;
+    --cor-alternativa: #152424;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    flex-direction: column;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: 'inter', sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 10;
+    background-color: #000000;
+
+
+}
+
+.topo{
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    padding-top: 16px;
+    padding-left: 48px;
+    margin: 0 auto;
+    gap: 10px;
+   
+
+}
+.topo-menu{
+    padding: 8px 14px;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+}
+ .topo a:hover{
+    background-color: var(--cor-quaternaria);
+}
+img{
+    width: 290px;
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.container-principal{
+    max-width: 981px;
+    margin: 0 auto;
+    padding: 50px 30px 5px 30px;
+    display: flex;
+    margin-bottom: 60px;
+}
+.section-conteudo{
+    position: relative;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+}
+.content{
+    width: 60%;
+    display: flex;
+    padding: 20px 21px 0px 0px;
+    flex-direction: column;
+}
+.container-foto{
+
+    position: absolute;
+    top: 60px;
+    right: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content li{
+   font-size: 12px;
+   margin-left: 60px;
+}
+.content li p{
+   font-size: 12px;
+}
+h3{
+    margin: 10px;
+    font-size: 14px;
+}
+h4{
+    margin: 10px;
+    font-size: 12px;
+}
+h1{
+    font-size: 24px;
+    margin: 0;
+}
+.section-conteudo p{      
+    font-size: 16px;
+    margin: 15px 0;
+    padding: 5px 0;
+}
+ 
+.div-links{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-titulo{
+    font-size: 15px;
+    padding-bottom: 6px;
+    font-weight: 600;
+    font-family: "krona One", sans-serif;
+}
+.div-links a{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    gap: 6px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px 54px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 12px;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+.div-links a:hover{
+    background-color: var(--cor-quaternaria);
+}
+
+.img-icone{
+    width: 20px;
+}
+.rodape{
+    width: 100%;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+.rodape p{
+    margin: 0;
+    padding: 6px;
+    width: 100%;
+}
+
+@media (max-width: 640px) {
+
+    .container-principal{
+        margin: 0;
+        padding: 24px 2px 15px 8px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        
+    }
+    .section-conteudo{
+        margin: 0 auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 5px 0px 5px 5px ;
+    }
+    .topo{
+        background-color: var(--cor-alternativa);
+        width: 100%;
+        justify-content: center;
+        padding: 8px 2px;
+        display: flex;
+        max-width: 960px;
+        margin: 0 auto;
+        gap: 60px;
+    }
+    .topo-menu{
+        font-size: 21px;
+    }
+    
+    img{
+        width: 252px;
+    }
+    .container-foto{
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 63px;
+    }
+    
+    h1{
+        font-size: 27px;
+    }
+    .content p{ 
+        width: 100%;     
+        font-size: 18px;
+        margin: 15px 0;
+        padding-right: 12px;
+    }
+    .content{
+        width: 100%;
+        padding-right: 5px;
+        text-align: left;
+    }
+    .div-links a{
+        gap: 12px;
+        width: 70%;
+    }
+    .rodape{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1040px){
+    .section-conteudo{
+        max-width: 780px;
+        gap: 40px;
+    }
+    .topo{
+        max-width: 780px;
+        margin: 0 auto;
+        padding-top: 16px;
+    
+    }
+}
+
+@media (max-width: 848px){
+    .section-conteudo{
+        max-width: 600px;
+        gap: 40px;
+    }
+    .topo{
+        max-width: 600px;
+        margin: 0 auto;
+        padding-top: 16px;
+    
+    }
+     
+   
+}
+
+
+

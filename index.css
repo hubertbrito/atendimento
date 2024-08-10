@@ -160,6 +160,12 @@ footer{
         text-align: center;
         border-left: 1px solid rgb(62, 122, 235);
     }
+    section h1{
+        margin: 24px;
+        padding: 18px 36px;
+        background-color: cadetblue;
+        border-radius: 8px;
+    }
     .container-botao{
         width: 100%;
         padding: 3px;
@@ -167,10 +173,11 @@ footer{
     }
     .button-ficha{
         color: black;
-        padding: 3px 9px;
+        padding: 9px 24px;
         background-color: aliceblue;
         cursor: pointer;
         border-radius: 8px;
+        font-weight: bold;
     }
     footer{
         display: block;

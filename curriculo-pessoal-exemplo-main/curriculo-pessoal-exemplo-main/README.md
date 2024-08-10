@@ -1,1 +1,0 @@
-#curriculo-pessoal-exemplo

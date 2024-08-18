@@ -72,7 +72,7 @@
         background-size: cover;
         width: 100%;
         height: 100%;
-        padding-top: 27px;
+        padding-top: 1px;
     }
     .container{
       display: flex;
@@ -117,15 +117,22 @@
       font-size: 1.8em; 
       margin-bottom: 24px;
     }
+    .div-promocao h3{
+      color: #070707;
+      font-size: 1.2em; 
+      margin-bottom: 24px;
+    }
+    .div-promocao{
+      padding: 0;
+    }
+    .div-promocao .destaque-cor{
+      color: #e67e22;
+    }
     .container-readLine p{
       text-align: left;
       color: #070707;
       font-size: 21px; 
       font-weight: 700;
-    }
-    .subtitulo-banner{
-        padding-bottom: 15px;
-        color: #EF068E;
     }
   
     .hero p{
@@ -736,7 +743,7 @@
       }
       .container-readLine h1{
         color: #070707;
-        font-size: 1.8em; 
+        font-size: 1.6em; 
         margin-bottom: 0;
       }
       .container-readLine p {
@@ -746,7 +753,20 @@
         text-align: center;
         font-weight: 600;
       }
+      .div-promocao{
+        padding: 21px 0 0;
+      }
       
+      .div-promocao p{
+        margin: 0;
+        padding-bottom: 12px;
+        font-size: 18px;
+      }
+      .div-promocao h3{
+        margin: 0;
+        padding-bottom: 1px;
+        font-size: 18px;
+      }
       .servicos{
         display: flex; 
         flex-direction: column;

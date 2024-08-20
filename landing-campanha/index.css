@@ -116,7 +116,7 @@
 
     }
     .container-readLine h1{
-      color: #e1bcd2;
+      color: #070707;
       font-size: 2.1em; 
       margin-bottom: 24px;
     }
@@ -776,23 +776,22 @@
         padding: 21px 0 0;
       }
       .div-promocao .destaque-promocao{
-        color: #e1e1ed;
         font-weight: bold;
         font-size: 21px;
+        margin: 0;
+        padding-bottom: 1px;
+        font-size: 18px;
+        color: #ffffff;
       }
       
       .div-promocao p{
         padding: 30px 0;
         font-size: 21px;
-        color: #bdbdcf;
+        color: #cacad6;
+        font-weight: normal;
       }
 
-      .div-promocao span{
-        margin: 0;
-        padding-bottom: 1px;
-        font-size: 18px;
-        color: #cfc9d8;
-      }
+     
       .servicos{
         display: none;
         display: flex; 

@@ -320,9 +320,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 12px;
+      padding: 21px 15px;
       color: #070707;
-      font-weight: 500;
+      font-weight: bold;
+    }
+    .div-whats-button p{
+      padding: 15px;
     }
     .fa{
       color: #272727;

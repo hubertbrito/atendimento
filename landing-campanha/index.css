@@ -18,7 +18,7 @@
       justify-content: space-between;
       align-items: center;
       width: 100%;
-      padding: 18px 18px 36px;
+      padding: 18px 18px 18px;
     }
     .container-topo{
       width: 100%;
@@ -28,6 +28,9 @@
       justify-content: space-between;
       align-items: center;
       padding: 0 21px;
+    }
+    .div-palavras-chave{
+      display: none;
     }
     .div-palavras-chave{
       text-align: center;
@@ -91,13 +94,17 @@
       width: 50%;
       padding: 10px 0px 10px 50px;
     }
+    #detalhes-p{
+      font-size: 14px;
+      padding-top: 15px;
+    }
     
     .container-form{
       display: flex;
       flex-direction: column;
       justify-content: stretch;
       align-items: center;
-      width: 50%;
+      width: 40%;
       text-align: center;
       padding: 0;
     }
@@ -107,33 +114,34 @@
   
     }
     .container-form p{
-      font-size: 21px;
-      color: #070707;
+      font-size: 16px;
+      color: #080808;
       margin-bottom: 21px;
-      width: 45%;
+      width: 51%;
       text-align: left;
       padding: 12px;
 
     }
     .container-readLine h1{
-      color: #070707;
+      color: #080808;
       font-size: 2.1em; 
       margin-bottom: 24px;
     }
     .div-promocao h3{
-      color: #070707;
+      color: #080808;
       font-size: 1.2em; 
       margin-bottom: 24px;
     }
     .div-promocao{
       padding: 0;
+      font-size: 21px;
     }
     .div-promocao .destaque-cor{
       color: #e67e22;
     }
     .container-readLine p{
       text-align: left;
-      color: #070707;
+      color: #080808;
       font-weight: 700;
       font-size: 21px;
       margin-bottom: 10px;
@@ -320,7 +328,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 21px 15px;
+     
       color: #070707;
       font-weight: bold;
     }
@@ -329,11 +337,15 @@
     }
     .fa{
       color: #272727;
+      font-size: 24px;
+    }
+    .whatsapp-button{
+      display: none;
     }
     .whatsapp-button {
       margin: 6px 0;
       background-color: #25D366; /* Cor do WhatsApp */
-      color: #272727;
+      color: #191919;
       border: none;
       border-radius: 5px;
       padding: 18px 45px;
@@ -352,7 +364,7 @@
 
     .whatsapp-button i {
       margin-right: 8px;
-      font-size: 20px;
+      font-size: 29 px;
     }
 
 
@@ -427,16 +439,7 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         overflow: hidden;
     }
-    .cards-container .minisite-foto{
-        width: 320px;
-        height: 600px;
-    }
-  
-    .card img {
-        width: auto;
-        height: auto;
-    }
-  
+   
     .card h2 {
         font-size: 18px;
         margin: 10px;
@@ -726,6 +729,9 @@
         justify-content: center;
         align-items: center;
       }
+        .div-palavras-chave{
+          display: block;
+        }
       .div-palavras-chave h2{
         display: none;
       }

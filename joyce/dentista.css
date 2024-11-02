@@ -16,7 +16,7 @@
   }
   
   .container {
-    max-width: 1024px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   
@@ -34,6 +34,7 @@
   .topo {
     background-color: #00cad1;
     width: 100%;
+    padding: 15px;
   }
   .topo .container {
     display: flex;
@@ -58,18 +59,22 @@
   }
   
   .topo-logo {
-    height: 60px;
+    height: 90px;
   }
   
   .topo-links{
     display: flex;
+    justify-content: space-between;
+    max-width: 30rem;
+    align-items: center;
+    gap: 40px;
   }
-  
   .topo-links a {
-    padding: 10px;
+    padding: 18px;
     text-decoration: none;
     color: #fff;
     font-weight: 600;
+   
   }
   
   .topo-links a:hover {
@@ -82,6 +87,13 @@
     .topo-links { width: 100%; border-top: 1px solid #009fa5; justify-content: space-around;}
   }
   /* Fim CSS Topo */
+  .topo-links{
+    display: flex;
+    justify-content: space-around;
+    min-width: 20rem;
+    align-items: center;
+    gap: 20px;
+  }
   
   
   /* Início CSS Rodapé */
@@ -107,7 +119,7 @@
     position: relative;
     background-image: url('assets/recepcao.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%;
     height: 500px;
   }
@@ -129,7 +141,7 @@
   .box-visao-geral h1 {
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 38px;
+    font-size: 48px;
     margin: 0;
   }
   
@@ -193,6 +205,15 @@
   @media (max-width: 1024px) {
     .box-visao-geral { height: 400px;}
   }
+
+  .topo-links{
+    display: flex;
+    justify-content: space-around;
+    min-width: 20rem;
+    align-items: center;
+    gap: 10px;
+  }
+  
   
   @media (max-width: 848px) {
     .box-visao-geral { height: 300px;}
@@ -201,6 +222,14 @@
     .box-especialidade {
       width: calc(100% / 2 - 40px);
     }
+    .topo-links{
+      display: flex;
+      justify-content: space-around;
+      min-width: 20rem;
+      align-items: center;
+      gap: 10px;
+    }
+    
     
   }
   
@@ -208,6 +237,14 @@
     .box-visao-geral { 
         height: 90vh;
     }
+    .topo-links{
+      display: flex;
+      justify-content: space-around;
+      min-width: 20rem;
+      align-items: center;
+      gap: 10px;
+    }
+    
     .box-visao-geral h1 { 
         font-size: 27px; 
         color: #000;
@@ -220,6 +257,7 @@
     
     .box-visao-geral{
         background-image: url('assets/banner-mobile.png');
+        background-size: contain;
     }
 
   }

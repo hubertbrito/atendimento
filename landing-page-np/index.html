@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>   
   
@@ -17,31 +18,34 @@
     <i class='bx bx-menu' id="menu-icon"></i>
    
 
-    <nav class="nav-bar">
-      <a href="#inicio" class="active">Inicio</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#portifolio">Portifólio</a>
-      <a href="#contato">Contato</a>
+    <nav class="navbar">
+      <a href="#inicio" style="--i:1;" class="active">Inicio</a>
+      <a href="#sobre" style="--i:2;">Sobre</a>
+      <a href="#servicos" style="--i:3;">Serviços</a>
+      <a href="#portifolio" style="--i:4;">Portifólio</a>
+      <a href="#contato" style="--i:5;">Contato</a>
     </nav>
   </header>
 
   <!-- Home section designer -->
-  <section class="home" id="home">
+  <section class="home" id="inicio">
     <div class="content-home">
-      <h3>Hello, it's me</h3>
+      <h3>Olá, eu sou a</h3>
       <h1>Maysa Carvalho</h1>
-      <h3>And i'm a <span>Notion Developer</span></h3>
-      <p>Lorem ipsum, dolor sit amet consectetur
-         adipisicing elit. Dolorum, laboriosam debitis 
-         voluptatum laudantium nemo provident earum inventore?</p>
+      <h3>posso te ajudar a criar</h3>
+      <h3>seu <span class="multiple-text" id="multiple-text"></span></h3>
+      <p>Com a personalização completa do seu Notion, você terá um espaço único e eficiente para organizar seus projetos, 
+        ideias e tarefas. Seu projeto, minha paixão. Vamos transformar sua visão em realidade. Seu Notion ideal te espera.
+         Entre em contato e descubra as possibilidades."</p>
          <div class="social-media">
-            <a href=""><i class='bx bxl-facebook'></i></a>
-            <a href=""><i class='bx bxl-instagram-alt' ></i></a>
-            <a href=""><i class='bx bxl-linkedin' ></i></a>
-            <a href=""><i class='bx bxl-youtube' ></i></a>
+            <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+            <a href="#" style="--i:8;"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#" style="--i:9;"><i class='bx bxl-linkedin'></i></a>
+            <a href="#" style="--i:10;"><i class='bx bxl-youtube'></i></a>
          </div>
-      <a href="#" class="btn">Contato</a>   
+      <a href="https://api.whatsapp.com/send?phone=5531988711073&text=Olá%20-%20Entrei%20em%2    
+      contato%20através%20do%20seu%20site." 
+      target="_blank" class="btn">Fale Comigo no WhatsApp</a>   
     </div>
 
     <div class="img-home">
@@ -49,6 +53,157 @@
     </div>
   </section>
 
+  <section class="about" id="sobre">
+    <div class="about-img">
+      <img src="assets/foto-vazado.png" alt="">
+    </div>
+    <div class="about-content">
+      <h2 class="heading">Um pouco sobre <span>mim</span></h2>
+      <h3>Notion UX developer</h3>
+      <p> Comecei a usar o Notion na faculdade pra organizar meus estudos e vi que era demais! 
+        Tão prático que meus amigos começaram a me pedir ajuda. Hoje, ajudo pessoas a 
+        transformarem suas organizações, estudos e negócios com o Notion. Seja pra estudar, vender cursos, 
+        ou organizar a rotina do trabalho, o Notion tem a solução perfeita pra você!</p>
+      <p>
+        Posso te ajudar a organizar seus projetos, tarefas e ideias de forma clara e visual no Notion. 
+        Imagine ter tudo o que precisa em um só lugar, acessível a qualquer hora e de qualquer lugar.
+      </p>
+      <a href="https://api.whatsapp.com/send?phone=5531988711073&text=Olá%20-%20Entrei%20em%2    
+      contato%20através%20do%20seu%20site." 
+      target="_blank" class="btn">Fale Comigo no WhatsApp</a>
+    </div>
+  </section>
+  
+  <!-- Service section design -->
+   <section class="services" id="servicos">
+    <h2 class="heading">Nossos <span>serviços</span></h2>
+   
+    <div class="services-container">
+
+      <div class="service-box">
+        <i class='bx bx-book-content' ></i>
+        <h3>Templates de Cursos Online</h3>
+        <p>Organize seu conteúdo, acompanhe o progresso dos alunos e ofereça uma experiência de aprendizado única.</p>
+    
+      </div>
+      <div class="service-box">
+        <i class='bx bx-task' ></i>
+        <h3>Organização do Trabalho</h3>
+        <p>A Central de Tarefas te ajuda a manter todas as suas atividades organizadas em um só lugar, enquanto o Gestor 
+          de Tempo otimiza o seu dia a dia..</p>
+        
+      </div>
+      <div class="service-box">
+        <i class='bx bx-chalkboard'></i>
+        <h3>Templates para Mentorias</h3>
+        <p>O Guia Mentor te ajudará a estruturar as sessões e acompanhar os mentorados, enquanto 
+          o Mapa de Progresso oferece uma visão clara do progresso.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="portifolio" id="portifolio">
+    <h2 class="heading">Clique nas imagens abaixo para saber mais sobre nossos</h2>
+    <h2 class="heading">Templates <span>personalizados</span></h2>
+
+    <div class="portifolio-container">
+        <div class="portifolio-box">
+            <img src="assets/portifolio001.jpg" alt="Descrição do projeto 1">
+
+
+            <div class="portfolio-layer">
+                <h4>O Curso Box</h4>
+                <p>Com o Kit Estudo, 
+                  O Curso Box oferece um formato compacto 
+                  e prático para organizar seu
+                  conteúdo.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+
+        </div>
+
+        <div class="portifolio-box">
+            <img src="assets/portifolio006.jpg" alt="Descrição do projeto 2">
+            <div class="portfolio-layer">
+                <h4>Templates de Mentoria</h4>
+                <p> 
+                  O Guia do Mentor oferece um roadmap completo para cada jornada, e o Mapa de Progresso visualiza o 
+                  desenvolvimento de cada etapa.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portifolio-box">
+            <img src="assets/portifolio003.jpg" alt="Descrição do projeto 3">
+            <div class="portfolio-layer">
+              <h4>Templates para Organização do Trabalho</h4>
+              <p> 
+                O Central de Tarefas unifica todas as suas atividades em um só lugar, enquanto o Gestor de Tempo ajuda 
+                você a otimizar seu dia a dia.</p>
+              <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portifolio-box">
+            <img src="assets/portifolio004.jpg" alt="Descrição do projeto 4">
+            <div class="portfolio-layer">
+              <h4>Outros Templates Versáteis </h4>
+              <p>Aumente sua produtividade e alcance seus objetivos com nossos templates personalizados.</p>
+              <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portifolio-box">
+            <img src="assets/portifolio005.jpg" alt="Descrição do projeto 5">
+            <div class="portfolio-layer">
+              <h4>Templates para estudos</h4>
+              <p>Aumente sua produtividade e alcance seus objetivos com nossos templates de
+                 organização dos estudos para o enem ou faculdade.</p>
+              <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+        <div class="portifolio-box">
+            <img src="assets/portifolio006.jpg" alt="Descrição do projeto 6">
+            <div class="portfolio-layer">
+              <h4>Outros Templates Versáteis </h4>
+              <p>Aumente sua produtividade e alcance seus objetivos com nossos templates personalizados. 
+               </p>
+              <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact section designer -->
+ <section id="contato" class="section-contact">
+  <div class="div-contact" id="contato">
+   
+    <h2 class="heading">Entre em contato <span>comigo</span></h2>
+  
+    <a href="https://api.whatsapp.com/send?phone=5531988711073&text=Olá%20-%20Entrei%20em%2    
+             contato%20através%20do%20seu%20site." 
+             target="_blank" class="btn">Fale Comigo no WhatsApp</a>
+    <!-- <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="Email">
+      </div>
+    </form> -->
+  </div>
+ </section>
+
+<footer class="footer">
+  <div class="footer-text">
+    <p>Copyrigth &copy; 2024 by Goowin | Todos os Direitos Reservados.</p>
+  </div>
+  <div class="footer-iconTop">
+    <a href="#inicio"><i class='bx bx-up-arrow-alt'></i></a>
+  </div>
+</footer>
+
+
+
+
+
+ 
   <script src="js/script.js"></script>    
 </body>
 </html>

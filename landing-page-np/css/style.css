@@ -390,6 +390,7 @@ span {
 }
 .slide img{
   width: 250px;
+  border-radius: 15px;
 }
 
 
@@ -620,6 +621,9 @@ span {
   margin-bottom: 5px;
   color: #666;
 }
+.lista-precos h3 {
+  font-size: 18px;
+}
 
 .lista-precos .beneficio-destaque {
   font-weight: bold; /* Estilo para o benefício principal */
@@ -641,6 +645,9 @@ span {
   animation: slideTop 1s ease forwards;
   animation-delay: 1s;
   cursor: pointer;
+}
+.bx-check-circle {
+  color: limegreen;
 }
 
 /* Responsividade */

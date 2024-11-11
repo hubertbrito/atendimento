@@ -54,3 +54,26 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 
   };
+
+
+ // script.js slide carrossel
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showSlide(n) {
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+  });
+  slides[n].classList.add('active');
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Exibir o primeiro slide inicialmente
+showSlide(currentSlide);
+
+// Trocar de slide a cada 3 segundos (ajuste o tempo conforme necessário)
+setInterval(nextSlide, 3000);

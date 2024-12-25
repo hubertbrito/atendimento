@@ -508,6 +508,12 @@
     .destaque-final{
       color: #e7fbff;
     }
+    .destaque-cor {
+      font-size: 27px;
+      margin: 2rem 0;
+      font-weight: 700;
+      color: #e67e22;
+    }
 
 
 
